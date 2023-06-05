@@ -5,12 +5,12 @@ TARGETED_DEVICE_FAMILY = 1,2,3,4
 //
 // iOS-specific settings
 //
-IPHONEOS_DEPLOYMENT_TARGET = 8.0
+IPHONEOS_DEPLOYMENT_TARGET = 11.0
 
 LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*] =  @executable_path/Frameworks @loader_path/Frameworks
 LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*] =  @executable_path/Frameworks @loader_path/Frameworks
 
-ENABLE_BITCODE[sdk=iphone*] = YES
+ENABLE_BITCODE[sdk=iphone*] = NO
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -31,7 +31,7 @@ TVOS_DEPLOYMENT_TARGET = 9.0
 LD_RUNPATH_SEARCH_PATHS[sdk=appletvos*] =  @executable_path/Frameworks @loader_path/Frameworks
 LD_RUNPATH_SEARCH_PATHS[sdk=appletvsimulator*] =  @executable_path/Frameworks @loader_path/Frameworks
 
-ENABLE_BITCODE[sdk=appletv*] = YES
+ENABLE_BITCODE[sdk=appletv*] = NO
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -42,4 +42,4 @@ WATCHOS_DEPLOYMENT_TARGET = 2.0
 LD_RUNPATH_SEARCH_PATHS[sdk=watchos*] =  @executable_path/Frameworks @loader_path/Frameworks
 LD_RUNPATH_SEARCH_PATHS[sdk=watchsimulator*] =  @executable_path/Frameworks @loader_path/Frameworks
 
-ENABLE_BITCODE[sdk=watch*] = YES
+ENABLE_BITCODE[sdk=watch*] = NO
